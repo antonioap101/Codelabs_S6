@@ -1,18 +1,29 @@
-# SQL Basics
+Inventory app
+==================================
 
-This folder contains the source code for the SQL Basics codelab.
+Solution code for Android Basics with Compose.
 
-# Introduction
+Introduction
+------------
 
-The SQLBasics project is a single screen app that simply instantiates a Room database. Rather than interacting with the database through Kotlin code, you'll learn the fundamentals of SQL, including writing queries to get data, as well as how to insert and delete from a database.
+This app is an Inventory tracking app. Demos how to add, update, sell, and delete items from the local database.
+This app demonstrated the use of Android Jetpack component [Room](https://developer.android.com/training/data-storage/room) database.
+The app also leverages [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel),
+[Flow](https://developer.android.com/kotlin/flow),
+and [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/).
 
-When the app is running, you'll be able to send SQL commands to the database via Android Studio's Database Inspector.
+Pre-requisites
+--------------
 
-# Pre-requisites
-* Experience navigating an Android Studio Project
+You need to know:
+- How to create and use composables.
+- How to navigate between composables, and pass data between them.
+- How to use architecture components including ViewModel, Flow, StateFlow and StateUi.
+- How to use coroutines for long-running tasks.
+- SQLite database and the SQLite query language
 
-# Getting Started
-1. Install Android Studio, if you don't already have it.
-2. Download the sample.
-3. Import the sample into Android Studio.
-4. Build and run the sample.
+
+Getting Started
+---------------
+
+1. Download and run the app.
