@@ -13,19 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.busschedule.ui
+package com.example.flightsearch.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.example.busschedule.BusScheduleApp
-import com.example.busschedule.data.BusSchedule
-import com.example.busschedule.data.BusScheduleDAO
+import com.example.flightsearch.BusScheduleApp
+import com.example.flightsearch.data.BusSchedule
+import com.example.flightsearch.data.BusScheduleDAO
+import com.example.flightsearch.data.FlightSearchDAO
 import kotlinx.coroutines.flow.Flow
 
-class BusScheduleViewModel(private val busScheduleDAO: BusScheduleDAO): ViewModel() {
+class BusScheduleViewModel(private val flightSearchDAO: FlightSearchDAO): ViewModel() {
 
     // Gets full bus schedule from DB
     fun getFullSchedule(): Flow<List<BusSchedule>> = busScheduleDAO.getAllItems()

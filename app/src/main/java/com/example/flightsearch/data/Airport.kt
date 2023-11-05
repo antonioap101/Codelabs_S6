@@ -13,18 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.busschedule.data
+package com.example.flightsearch.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName="Schedule")
-data class BusSchedule(
+@Entity(tableName="airport")
+data class Airport(
     @PrimaryKey
     val id: Int,
-    @ColumnInfo(name = "stop_name")
-    val stopName: String,
-    @ColumnInfo(name = "arrival_time")
-    val arrivalTimeInMillis: Int
+
+    @ColumnInfo(name = "codigo_IATA")
+    val codigoIATA: String,
+
+    @ColumnInfo(name = "nombre")
+    val nombre: String,
+
+    @ColumnInfo(name = "pasajeros")
+    val pasajeros: Int
 )

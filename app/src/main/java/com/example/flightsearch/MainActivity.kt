@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.busschedule
+package com.example.flightsearch
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.busschedule.ui.BusScheduleApp
-import com.example.busschedule.ui.theme.BusScheduleTheme
+import com.example.flightsearch.ui.BusScheduleApp
+import com.example.flightsearch.ui.theme.BusScheduleTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

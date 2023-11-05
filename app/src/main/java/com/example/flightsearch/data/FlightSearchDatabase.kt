@@ -1,27 +1,27 @@
-package com.example.busschedule.data
+package com.example.flightsearch.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [BusSchedule::class], version = 1)
+@Database(entities = [Airport::class, Favorite::class], version = 1)
 
-abstract class BusScheduleDatabase: RoomDatabase(){
-    abstract fun busScheduleDAO(): BusScheduleDAO
+abstract class FlightSearchDatabase: RoomDatabase(){
+    abstract fun FlightSearchDAO(): FlightSearchDAO
 
     companion object {
         @Volatile
-        private var INSTANCE: BusScheduleDatabase? = null
+        private var INSTANCE: FlightSearchDatabase? = null
 
-        fun getDatabase(context: Context): BusScheduleDatabase {
+        fun getDatabase(context: Context): FlightSearchDatabase {
             return INSTANCE ?: synchronized(this) {
                 Room.databaseBuilder(
                     context,
-                    BusScheduleDatabase::class.java,
+                    FlightSearchDatabase::class.java,
                     "bus_schedule_database"
                 )
-                    .createFromAsset("database/bus_schedule.db")
+                    .createFromAsset("database/flight_search.db")
                     .fallbackToDestructiveMigration()
                     .build()
                     .also {

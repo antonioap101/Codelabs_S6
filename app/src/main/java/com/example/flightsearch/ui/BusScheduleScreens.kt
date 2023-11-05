@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.busschedule.ui
+package com.example.flightsearch.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.clickable
@@ -58,9 +58,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.busschedule.R
-import com.example.busschedule.data.BusSchedule
-import com.example.busschedule.ui.theme.BusScheduleTheme
+import com.example.flightsearch.R
+import com.example.flightsearch.data.Airport
+import com.example.flightsearch.data.Favorite
+import com.example.flightsearch.ui.theme.BusScheduleTheme
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
