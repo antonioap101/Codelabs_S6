@@ -15,5 +15,5 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.BusSchedule" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.FlightSearch" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

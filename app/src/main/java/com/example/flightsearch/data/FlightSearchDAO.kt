@@ -23,4 +23,12 @@ interface FlightSearchDAO {
         """
     )
     fun getMostFrequentedAirports(): Flow<List<Airport>>
+
+    // Consulta para obtener la lista de vuelos favoritos sin ningún texto de búsqueda
+    @Query(
+        """
+        SELECT id, codigo_de_salida, destination_code FROM favorite
+        """
+    )
+    fun getFavoriteFlights(): Flow<List<Favorite>>
 }

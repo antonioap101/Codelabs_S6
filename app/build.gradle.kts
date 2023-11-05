@@ -20,11 +20,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.busschedule"
+    namespace = "com.example.flightsearch"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.busschedule"
+        applicationId = "com.example.flightsearch"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

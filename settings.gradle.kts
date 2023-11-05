@@ -27,5 +27,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Bus Schedule"
+rootProject.name = "Flight Search"
 include(":app")

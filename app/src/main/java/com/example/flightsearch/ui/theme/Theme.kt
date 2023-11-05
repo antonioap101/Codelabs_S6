@@ -97,7 +97,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 @Composable
-fun BusScheduleTheme(
+fun FlightSearchTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+, turned off for training purposes
     dynamicColor: Boolean = false,
