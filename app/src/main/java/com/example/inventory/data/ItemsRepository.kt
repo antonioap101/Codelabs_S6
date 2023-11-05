@@ -21,9 +21,6 @@ import kotlinx.coroutines.flow.Flow
 /**
  * Repository that provides insert, update, delete, and retrieve of [Item] from a given data source.
  */
-/**
- * Repository that provides insert, update, delete, and retrieve of [Item] from a given data source.
- */
 interface ItemsRepository {
     /**
      * Retrieve all the items from the the given data source.
@@ -50,3 +47,4 @@ interface ItemsRepository {
      */
     suspend fun updateItem(item: Item)
 }
+
